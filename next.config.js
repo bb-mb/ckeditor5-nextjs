@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-}
+  reactStrictMode: false,
+  experimental: {
+    reactMode: "concurrent",
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
